@@ -1,7 +1,7 @@
 name: username_generator
 description: Simple package to create random usernames
 version: 1.0.4
-homepage: https://github.com/clragon/username_gen
+homepage: https://github.com/clragon/username_generator
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
