@@ -1,4 +1,4 @@
-import 'package:username_gen/username_gen.dart';
+import 'package:username_generator/username_generator.dart';
 
 main() {
   final username = UsernameGenerator().generate();
