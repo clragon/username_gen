@@ -2,40 +2,29 @@
 
 ## Random username generator
 
-This is a simple package to create random usernames. To user it simply make these commands, ported from [Javascript](https://github.com/MaPhil/username-generator/)
-l
+Simple package to create random usernames
 
 ```dart
-import 'package:username_gen/username_gen.dart';
 
-var username = UsernameGen.random(); // sharpened-whiskey87
+import 'package:username_generator/username_generator.dart';
 
- //OR
+String username = UsernameGen.generate(); // sharpened-whiskey87
 
-final username = UsernameGen().generate(); // sharpened-whiskey87
+// consistently the same name
+String username = UsernameGen.generate(1234); // pink-harmonica17
 
 ```
 
-If you want to set an array of name (nouns) and or adjectives use these commands and also if you want to use a different seperator commands
+Array of names, adjectives and the seperator can be specified when creating the generator
 
 ```dart
 
-import 'package:username_gen/username_gen.dart';
+import 'package:username_generator/username_generator.dart';
 
-final username = UsernameGen.generateWith(
-    data: UsernameGenData(
-        names: ['new names'],
-        adjectives: ['new adjectives'],
-    ),
-    seperator: '_'
-); // pink-harmonica17
+final username = UsernameGenerator(
+  seperator: '-'
+  names: ['new names'],
+  adjectives: ['new adjectives'],
+).generate(); // sharpened-whiskey87
 
- //OR
-
-final username = UsernameGen()
-      ..setNames(['new names'])
-      ..setSeperator('_')
-      ..setAdjectives(['new adjectives'])
-      ..generate(); // pink-harmonica17
-      
 ```
