@@ -1,6 +1,4 @@
-# username_gen
-
-## Random username generator
+# Random username generator
 
 Simple package to create random usernames
 
