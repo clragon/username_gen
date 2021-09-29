@@ -6,10 +6,15 @@ Simple package to create random usernames
 
 import 'package:username_generator/username_generator.dart';
 
-String username = UsernameGen.generate(); // sharpened-whiskey87
+// random names
+UsernameGen.generate(); // negligible_berry
 
-// consistently the same name
-String username = UsernameGen.generate(1234); // pink-harmonica17
+UsernameGen.generate(); // modern_enrollment
+
+// seed based names
+UsernameGen.generate(1234); // accomplished_itch
+
+UsernameGen.generate(1234); // accomplished_itch
 
 ```
 
@@ -21,8 +26,8 @@ import 'package:username_generator/username_generator.dart';
 
 final username = UsernameGenerator(
   seperator: '-'
-  names: ['new names'],
-  adjectives: ['new adjectives'],
-).generate(); // sharpened-whiskey87
+  names: ['names'],
+  adjectives: ['adjectives'],
+).generate(); // negligible-berry
 
 ```
